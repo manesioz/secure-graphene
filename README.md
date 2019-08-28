@@ -2,7 +2,10 @@
 
 An extension of [Graphene](https://github.com/graphql-python/graphene) which allows you to secure your GraphQL API against malicious queries. 
 
-Features include: 
+Features included: 
+- 
+
+Features being developed: 
 
 - Query Timeouts 
 - Limit Query Depth 
