@@ -8,11 +8,11 @@ Features included:
 Features being developed: 
 
 - Limit Query Depth
-- Query Timeouts 
 - Limit Query Complexity 
+- Input Validation + Sanitation 
+- Query Timeouts 
 - Whitelist Queries 
 - Persist Queries 
-- Throttle Clients 
-- Protect GraphQL Endpoint 
+- Throttle Clients / Rate-Limiting 
 
 This is a WIP! 
