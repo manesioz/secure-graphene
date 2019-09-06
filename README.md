@@ -9,7 +9,7 @@ Features being developed:
 
 - Limit Query Depth
 - Limit Query Complexity 
-- Input Validation + Sanitation 
+- Input Validation + Sanitization 
 - Query Timeouts 
 - Whitelist Queries 
 - Persist Queries 
