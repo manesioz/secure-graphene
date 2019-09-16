@@ -8,7 +8,7 @@ Features included:
 Features being developed: 
 
 - Limit Query Depth
-- Limit Query Complexity 
+- Limit Query Complexity (for complexity, you can first have default values for each field, and you can also have middleware that measures the time and resource use for certain queries and decides the complexity value accordingly) 
 - Input Validation + Sanitization 
 - Query Timeouts 
 - Whitelist Queries 
