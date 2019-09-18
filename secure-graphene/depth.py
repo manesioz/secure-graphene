@@ -1,6 +1,18 @@
 from graphql.backend.core import GraphQLCoreBackend
 
 def measure_depth(selection_set, current_depth=1):
+    '''
+    A function which recursively measures the depth of a Graphene Query
+    
+    :type selection_set: SelectionSet 
+    :param selection_set: Graphql-core object used for query traversal/indexing  
+    
+    :type current_depth: int 
+    :param current_depth: The current depth of the query 
+    
+    :rtype: int 
+    :return: The max depth of the query  
+    '''
     max_depth = current_depth
     for field in selection_set.selections:
         if field.selection_set:
