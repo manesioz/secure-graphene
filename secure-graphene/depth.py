@@ -16,6 +16,6 @@ class DepthAnalysisBackend(GraphQLCoreBackend, max_depth):
         for definition in ast.definitions:
             depth = measure_depth(definition.selection_set)
             if depth > max_depth: 
-                raise Exception('Query is too deep - its depth is {} but the max depth is {}'.format(depth, max_depth)
+                raise Exception('Query is too deep - its depth is {} but the max depth is {}'.format(depth, max_depth))
 
         return document
