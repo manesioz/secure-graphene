@@ -194,6 +194,6 @@ result.errors
 ```
 Which returns the following: 
 ```python
-    [Exception('Query is too deep - your depth is 3 and the max depth is 2')]
+[Exception('Query is too deep - your depth is 3 and the max depth is 2')]
 ```
     
