@@ -11,10 +11,12 @@ Other features (limiting query complexity, etc) are under development.
 
 ### Prerequisites 
 
-- Graphene 
+- [graphql-core](https://github.com/graphql-python/graphql-core) 
 
 
 ### Installation 
+
+- Will be available on pip soon 
 
 
 ### Detailed Example 
