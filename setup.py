@@ -21,7 +21,6 @@ setup(
   keywords = ['graphql', 'python', 'security', 'graphene', 'api'],   
   install_requires=[
           'graphql-core',
-          'graphene',
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      
