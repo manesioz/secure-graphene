@@ -3,7 +3,7 @@ from setuptools import setup, Extension
 setup(
   name = 'secure-graphene',         
   packages = ['secure_graphene'],  
-  version = '0.1',      
+  version = '0.1.1',      
   license='MIT',        
   description = 'Python library that assists you in securing your GraphQL API against malicious queries',   
   author = 'Zachary Manesiotis',        
