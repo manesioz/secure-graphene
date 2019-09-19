@@ -1,11 +1,4 @@
-import os 
-import sys 
 from setuptools import setup, Extension
-
-
-
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
   
 setup(
   name = 'secure-graphene',         
@@ -13,8 +6,6 @@ setup(
   version = '0.1',      
   license='MIT',        
   description = 'Python library that assists you in securing your GraphQL API against malicious queries',   
-  long_description=read('README.md'),
-  long_description_content_type='text/markdown',
   author = 'Zachary Manesiotis',        
   author_email = 'zack.manesiotis@gmail.com',    
   url = 'https://github.com/manesioz/secure-graphene',   
