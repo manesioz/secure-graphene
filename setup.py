@@ -9,7 +9,7 @@ setup(
   author = 'Zachary Manesiotis',        
   author_email = 'zack.manesiotis@gmail.com',    
   url = 'https://github.com/manesioz/secure-graphene',   
-  download_url = 'https://github.com/manesioz/secure-graphene/archive/v1.0.tar.gz',    
+  download_url = 'https://github.com/manesioz/secure-graphene/archive/v0.1.1.tar.gz',    
   keywords = ['graphql', 'python', 'security', 'graphene', 'api'],   
   install_requires=[
           'graphql-core',
