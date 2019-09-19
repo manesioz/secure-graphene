@@ -16,7 +16,7 @@ Other features (limiting query complexity, etc) are under development.
 
 ### Installation 
 
-- Will be available on pip soon 
+-  `pip install secure-graphene` 
 
 
 ### Detailed Example 
@@ -25,6 +25,7 @@ Given the following schema:
 
 ```python
 import graphene
+import secure_graphene
 
 class Episode(graphene.Enum):
     NEWHOPE = 4
