@@ -1,10 +1,19 @@
+import os 
+import sys 
 from distutils.core import setup
+
+
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+  
 setup(
   name = 'secure-graphene',         # How you named your package folder (MyLib)
   packages = ['secure_graphene'],   # Chose the same as "name"
   version = '0.1',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Python library that assists you in securing your GraphQL API against malicious queries',   # Give a short description about your library
+  long_description=read('README.md'),
+  long_description_content_type='text/markdown',
   author = 'Zachary Manesiotis',                   # Type in your name
   author_email = 'zack.manesiotis@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/manesioz/secure-graphene',   # Provide either the link to your github or to your website
