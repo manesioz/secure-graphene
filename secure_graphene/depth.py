@@ -21,13 +21,16 @@ def measure_depth(selection_set, current_depth=1):
                 max_depth = new_depth
     return max_depth
 
-class DepthAnalysisBackend(GraphQLCoreBackend, max_depth):
+class DepthAnalysisBackend(GraphQLCoreBackend):
+    def __init__(self, max_depth): 
+        self.max_depth = max_depth 
+       
     def document_from_string(self, schema, document_string):
         document = super().document_from_string(schema, document_string)
         ast = document.document_ast
         for definition in ast.definitions:
             depth = measure_depth(definition.selection_set)
-            if depth > max_depth: 
-                raise Exception('Query is too deep - its depth is {} but the max depth is {}'.format(depth, max_depth))
+            if depth > self.max_depth: 
+                raise Exception('Query is too deep - its depth is {} but the max depth is {}'.format(depth, self.max_depth))
 
         return document
