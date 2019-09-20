@@ -25,7 +25,7 @@ Given the following schema:
 
 ```python
 import graphene
-import secure_graphene
+from secure_graphene import depth
 
 class Episode(graphene.Enum):
     NEWHOPE = 4
@@ -188,7 +188,7 @@ query_string = """
 By doing the following: 
 
 ```python
-backend = DepthAnalysisBackend(max_depth=2, execute_params={'executor': None}) 
+backend = depth.DepthAnalysisBackend(max_depth=2, execute_params={'executor': None}) 
 schema = graphene.Schema(query=Query)
 result = schema.execute(query_string, backend=backend)
 result.errors
