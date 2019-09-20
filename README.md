@@ -188,7 +188,7 @@ query_string = """
 By doing the following: 
 
 ```python
-backend = DepthAnalysisBackend(max_depth=2) 
+backend = DepthAnalysisBackend(max_depth=2, execute_params={'executor': None}) 
 schema = graphene.Schema(query=Query)
 result = schema.execute(query_string, backend=backend)
 result.errors
