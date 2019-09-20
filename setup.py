@@ -3,13 +3,13 @@ from setuptools import setup, Extension
 setup(
   name = 'secure-graphene',         
   packages = ['secure_graphene'],  
-  version = '0.1.1',      
+  version = '0.1.2',      
   license='MIT',        
   description = 'Python library that assists you in securing your GraphQL API against malicious queries',   
   author = 'Zachary Manesiotis',        
   author_email = 'zack.manesiotis@gmail.com',    
   url = 'https://github.com/manesioz/secure-graphene',   
-  download_url = 'https://github.com/manesioz/secure-graphene/archive/v0.1.1.tar.gz',    
+  download_url = 'https://github.com/manesioz/secure-graphene/archive/v0.1.2.tar.gz',    
   keywords = ['graphql', 'python', 'security', 'graphene', 'api'],   
   install_requires=[
           'graphql-core',
