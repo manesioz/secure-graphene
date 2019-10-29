@@ -22,10 +22,13 @@ def measure_depth(selection_set, current_depth=1):
     return max_depth
 
 class DepthAnalysisBackend(GraphQLCoreBackend):
-    def __init__(self, max_depth, execute_params): 
+    def __init__(self, max_depth, execute_params=None):
         self.max_depth = max_depth 
-        self.execute_params = execute_params 
-       
+        if execute_params is None:
+            self.execute_params = {'executor': None}
+         else: 
+            self.execute_params = execute_params
+                   
     def document_from_string(self, schema, document_string):
         document = super().document_from_string(schema, document_string)
         ast = document.document_ast
