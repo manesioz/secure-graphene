@@ -1,6 +1,11 @@
-# secure-graphene
+<p align="center">
+  <b>Secure Graphene</b>
+  <br><br>
+    An extension of <a href=https://github.com/graphql-python/graphene>Graphene</a> which allows you to secure your GraphQL API against malicious queries. 
+  <br><br>
+  <img src="https://github.com/manesioz/secure-graphene/blob/master/assets/secure-graphene3.png">
+</p>
 
-An extension of [Graphene](https://github.com/graphql-python/graphene) which allows you to secure your GraphQL API against malicious queries. 
 
 Features included: 
 - Limit Query Depth
